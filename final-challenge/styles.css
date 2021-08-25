@@ -10,7 +10,7 @@ body {
   font-size: 1.3rem;
 }
 header {
-  background: #136c72;
+  background: #2E323F;
   padding: 1em 0;
   text-align: center;
 }
@@ -90,7 +90,11 @@ header {
 }
 
 .nav__list--secondary {
-  margin-top: 1rem;
+  margin-top: 2em;
+}
+
+.nav__item {
+  margin-top: .75em;
 }
 
 .nav__link {
@@ -102,7 +106,7 @@ header {
 .nav__link--button {
   padding: 0.25em 0.75em;
   background-color: #fff;
-  color: #23424a;
+  color: #2E323F;
   border-radius: 100px;
 }
 
