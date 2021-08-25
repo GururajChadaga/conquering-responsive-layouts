@@ -101,6 +101,7 @@ header {
   text-decoration: none;
   color: #fff;
   font-size: 1.125rem;
+  text-transform: uppercase;
 }
 
 .nav__link--button {
