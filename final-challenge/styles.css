@@ -1,0 +1,135 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.3rem;
+}
+header {
+  background: #136c72;
+  padding: 1em 0;
+  text-align: center;
+}
+
+.nav-toggle {
+  cursor: pointer;
+  border: 0;
+  width: 3em;
+  height: 3em;
+  padding: 0em;
+  border-radius: 50%;
+  background: #072a2d;
+  color: white;
+  transition: opacity 250ms ease;
+
+  position: absolute;
+  left: 0;
+}
+
+.nav-toggle:focus,
+.nav-toggle:hover {
+  opacity: 0.75;
+}
+
+.hamburger {
+  width: 50%;
+  position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  display: block;
+  margin: 0 auto;
+  height: 3px;
+  background: white;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  width: 100%;
+}
+
+.hamburger::before {
+  transform: translateY(-6px);
+}
+
+.hamburger::after {
+  transform: translateY(3px);
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+  /* added for nav-toggle positioning */
+  position: relative;
+}
+
+.nav {
+  visibility: hidden;
+  height: 0;
+  position: relative;
+  font-size: 1rem;
+}
+
+.nav--visible {
+  visibility: visible;
+  height: auto;
+  position: relative;
+}
+
+.nav__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav__list--secondary {
+  margin-top: 1rem;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.125rem;
+}
+
+.nav__link--button {
+  padding: 0.25em 0.75em;
+  background-color: #fff;
+  color: #23424a;
+  border-radius: 100px;
+}
+
+@media (min-width: 800px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+  .nav {
+    visibility: visible;
+    height: auto;
+    position: relative;
+    display: flex;
+  }
+  .nav__list {
+    display: flex;
+  }
+  .nav__list--secondary {
+    margin-left: 1em;
+    margin-top: 0;
+  }
+  .nav__item {
+    margin-left: 3em;
+  }
+}
