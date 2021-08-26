@@ -76,7 +76,8 @@ header {
 }
 
 .container {
-  max-width: 80%;
+  width: 80%;
+  max-width: 1200px;
   margin: 0 auto;
   /* added for nav-toggle positioning */
   position: relative;
@@ -158,7 +159,7 @@ header {
 }
 
 .sales {
-  background: #e7e5e5;
+  background: #eee8e8;
   padding: 5vh 0;
 }
 
@@ -170,10 +171,47 @@ header {
 .sales-point__title {
   font-family: 'Oswald', sans-serif;
   color: #a59678;
-  margin-bottom: .75em;
+  margin-bottom: 0.75em;
 }
 
 .sales-point__description {
+  font-family: 'Montserrat', sans-serif;
+}
+
+main {
+  padding-top: 5vh;
+}
+
+.main__content {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.main__content__title {
+  font-family: 'Oswald', sans-serif;
+  color: #a59678;
+  margin-bottom: 0.75em;
+}
+
+.main__content__img {
+  max-width: 100%;
+  margin: 5vh 0;
+}
+
+.main__step {
+  background-color: #2e323f;
+  color: white;
+  text-align: center;
+  margin: 5vh 0;
+  padding: 5vh 3vh;
+}
+
+.main__step__title {
+  font-family: 'Oswald', sans-serif;
+  margin-bottom: 0.75em;
+  font-size: 1.5rem;
+}
+
+.main__step__content {
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -240,6 +278,15 @@ header {
   .sales-point {
     width: 30%;
   }
+
+  .main__steps {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main__step {
+    width: 30%;
+  }
 }
 
 @media (min-width: 1100px) {
@@ -250,5 +297,53 @@ header {
 
   .hero__description {
     font-size: 1.5rem;
+  }
+
+  main {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .sales-point__title {
+    font-size: 30px;
+  }
+
+  .sales-point__description {
+    font-size: 18px;
+  }
+
+  .main__content__title {
+    font-size: 36px;
+  }
+
+  .main__content__description {
+    font-size: 21px;
+  }
+
+  .main__steps {
+    display: block;
+    align-content: flex-start;
+  }
+
+  .main__step {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .main__content {
+    width: 60%;
+  }
+
+  .main__steps {
+    width: 30%;
+    height: 60vh;
+  }
+
+  .main__step__title {
+    font-size: 30px;
+  }
+
+  .main__step__content {
+    font-size: 18px;
   }
 }
