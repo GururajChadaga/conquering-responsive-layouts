@@ -225,6 +225,7 @@ footer {
 .footer__primary {
   margin-bottom: 6vh;
   font-size: 1.7rem;
+  text-align: center;
 }
 
 .footer__secondary__about {
@@ -356,10 +357,6 @@ footer {
 @media (min-width: 900px) {
   footer {
     font-size: 1rem;
-  }
-
-  .footer__primary__title {
-    font-size: 1.5rem;
   }
 
   .footer__title {
